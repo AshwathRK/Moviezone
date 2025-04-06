@@ -13,10 +13,22 @@
 	background-image: linear-gradient(to right, var(--primary_color), var(--secondary_color), var(--primary_color));
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 html,
 body {
 	height: 100%;
-	background-color: rgb(116 3 32);
+	/* background-color: rgb(116 3 32); */
 }
 
 * {
@@ -164,12 +176,71 @@ body {
 
 /* Movie list */
 
-.TopListMovies{
-	padding: 50px 50px;
-	height: 500px;
+.TopListMovies {
+	background-color: rgb(72, 40, 48);
+	width: 100%;
+	height: 600px;
+	padding: 0 50px;
+
+	.TitleofMovielist {
+		height: 10%;
+		border-left: 4px solid white;
+		padding-left: 10px;
+		color: white;
+
+		.topMoviesonlist {
+			width: 100%;
+			height: 80%;
+
+			.movieList {
+				height: 100%;
+				overflow: hidden;
+				overflow-y: auto;
+
+				.moiveCard {
+					width: 300px;
+					height: 100%;
+					background-color: white;
+					.cardBody{
+						.btn-searchere:hover{
+							background-color: #dc3545;
+						}
+					}
+				}
+
+			}
+		}
+	}
 }
 
-.TitleofMovielist {
-	padding: 0 5px;
-	border-left: 3px solid rgb(116 3 32);
+
+
+/* PopulerIntrests */
+
+.populerInstrests{
+	background-color: #ffedef;
+	padding: 0 50px;
+	.populerTitle{
+		.title{
+			color: var(--primary_color);
+			.arrowimage{
+				filter: invert(15%) sepia(100%) saturate(800%) hue-rotate(-10deg) brightness(95%) contrast(105%);
+			}
+			.arrowimage:hover{
+				filter: invert(1) brightness(2) contrast(200%);
+			}
+		}
+	}
+	.popcards{
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		.populercards{
+			min-width: 200px;
+			max-width: 250px;
+			height: 320px;
+			
+			display: grid;
+			background-color: rgb(72, 40, 48);
+			border: 2px solid rgb(72, 40, 48);
+		}
+	}
 }
