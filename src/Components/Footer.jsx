@@ -9,10 +9,10 @@ export default function
                 <div className='w-99 h-30 border rounded-xl flex flex-col items-center justify-around'>
                     <h5 className='text-white poppins-semibold'>Follow MoiveZone on social</h5>
                     <div className='flex items-center justify-center gap-x-3'>
-                        <button type="button" class="btn socialbtn btn-outline-light"><img src="./public/Social/instagram-logo.png" className='socialbtnimg w-6' /></button>
-                        <button type="button" class="btn socialbtn btn-outline-light"><img src="./public/Social/facebook-app-symbol.png" className='socialbtnimg w-6' /></button>
-                        <button type="button" class="btn socialbtn btn-outline-light"><img src="./public/Social/twitter.png" className='socialbtnimg w-6' /></button>
-                        <button type="button" class="btn socialbtn btn-outline-light"><img src="./public/Social/youtube.png" className='socialbtnimg w-6' /></button>
+                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./public/Social/instagram-logo.png" className='socialbtnimg w-6' /></button>
+                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./public/Social/facebook-app-symbol.png" className='socialbtnimg w-6' /></button>
+                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./public/Social/twitter.png" className='socialbtnimg w-6' /></button>
+                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./public/Social/youtube.png" className='socialbtnimg w-6' /></button>
                     </div>
                 </div>
                 <div className='w-99 h-30 border rounded-xl flex'>
