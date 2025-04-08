@@ -7,7 +7,8 @@ import TopListMovies from './Components/TopListMovies';
 import PopulerIntrests from './Components/PopulerIntrests';
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MovieList from './Components/MovieList';
+import MovieList from './Pages/MovieList';
+import WatchList from './Pages/WatchList';
 
 export default function App() {
     return (
@@ -26,6 +27,7 @@ export default function App() {
                     }
                 />
                 <Route path='/movielist' element={<MovieList />} />
+                <Route path='/watchlist' element={<WatchList />} />
             </Routes>
         </>
     );
