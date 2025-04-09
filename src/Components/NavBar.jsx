@@ -16,7 +16,7 @@ export default function NavBar() {
     useEffect(() => {
         axios.get(`http://www.omdbapi.com/?apikey=${APITokenKey}&s=${searchValue}`)
             .then(function (response) {
-                response.data.Search ? dispatch(addMovies(response.data.Search)) : console.log("No value found");
+                response.data.Search ? dispatch(addMovies(response.data.Search)) : null;
             })
             .catch(function (error) {
                 console.log(error);

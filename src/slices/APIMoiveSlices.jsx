@@ -7,10 +7,10 @@ const searchMovieData = createSlice({
     initialState,
     reducers: {
         addMovies(state, action) {
-            state.push(action.payload);
+            return action.payload;
         }
     }
 });
-    
+
 export const { addMovies } = searchMovieData.actions;
 export default searchMovieData.reducer;

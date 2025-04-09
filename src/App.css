@@ -282,3 +282,54 @@ body {
 		}
 	}
 }
+
+.searchMoiveList{
+	background-color: rgb(255, 237, 239);
+
+}
+.moiveListPage{
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	padding-bottom: 20px;
+	.moiveCardInPage{
+		background-color: var(--primary_color);
+		transition: box-shadow 0.2s;
+		>.watchLiskbeforeclickbtn{
+			display: none;
+			border-radius: 50%;
+			background-color: var(--primary_color);
+			right: 1vw;
+			top: 0.4vw;
+			.watchlistbtn{
+				filter: invert(1) brightness(2) contrast(200%);
+			}
+		}
+		>.watchLiskbeforeclickbtn:hover{
+			background-color: white;
+			.watchlistbtn{
+				filter: brightness(0) saturate(100%);
+			}
+		}
+		.watchLiskafterclickbtn{
+			display: flex;
+			border-radius: 50%;
+			background-color: var(--primary_color);
+			right: 1vw;
+			top: 0.4vw;
+			.watchlistbtn{
+				filter: invert(1) brightness(2) contrast(200%);
+			}
+		}
+		>.watchLiskafterclickbtn:hover{
+			background-color: white;
+			.watchlistbtn{
+				filter: brightness(0) saturate(100%);
+			}
+		}
+	}
+	.moiveCardInPage:hover{
+		box-shadow: 0 0 10px 0 var(--primary_color);
+		>.watchLiskbeforeclickbtn{
+			display: flex;
+		}
+	}
+}
