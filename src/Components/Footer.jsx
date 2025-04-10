@@ -9,10 +9,10 @@ export default function
                 <div className='w-99 h-30 border rounded-xl flex flex-col items-center justify-around'>
                     <h5 className='text-white poppins-semibold'>Follow MoiveZone on social</h5>
                     <div className='flex items-center justify-center gap-x-3'>
-                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./public/Social/instagram-logo.png" className='socialbtnimg w-6' /></button>
-                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./public/Social/facebook-app-symbol.png" className='socialbtnimg w-6' /></button>
-                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./public/Social/twitter.png" className='socialbtnimg w-6' /></button>
-                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./public/Social/youtube.png" className='socialbtnimg w-6' /></button>
+                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./Social/instagram-logo.png" className='socialbtnimg w-6' /></button>
+                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./Social/facebook-app-symbol.png" className='socialbtnimg w-6' /></button>
+                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./Social/twitter.png" className='socialbtnimg w-6' /></button>
+                        <button type="button" className="btn socialbtn btn-outline-light"><img src="./Social/youtube.png" className='socialbtnimg w-6' /></button>
                     </div>
                 </div>
                 <div className='w-99 h-30 border rounded-xl flex'>
@@ -22,7 +22,7 @@ export default function
                     </div>
                     <div className='w-2/5 h-full rounded-r-xl flex items-center justify-center'>
                         <div className='w-3/5 h-4/5 p-2 bg-white'>
-                            <img src="./public/imdb qr.png" className='w-full h-full' />
+                            <img src="./imdb qr.png" className='w-full h-full' />
                         </div>
                     </div>
                 </div>

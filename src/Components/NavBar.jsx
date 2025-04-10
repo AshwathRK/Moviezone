@@ -14,7 +14,7 @@ export default function NavBar() {
     const dispatch = useDispatch()
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get(`http://www.omdbapi.com/?apikey=${APITokenKey}&s=${searchValue}`)
+        axios.get(`https://www.omdbapi.com/?apikey=${APITokenKey}&s=${searchValue}`)
             .then(function (response) {
                 response.data.Search ? dispatch(addMovies(response.data.Search)) : null;
             })
