@@ -36,7 +36,7 @@ export default function NavBar() {
     };
     return (
         <nav className='grid relative navbarColorGradiant lg:grid-cols-12 lg:grid-rows-1 lg:px-5 md:px-3 h-16' data-bs-theme="dark">
-            <a className='col-span-2 flex items-center justify-center' href="#"><img className='box-border w-20 h-12' src="logo_full_white.png" alt="main logo" /></a>
+                <a onClick={()=>{navigate("/");}} className='col-span-2 flex items-center justify-center'><img className='box-border w-20 h-12' src="logo_full_white.png" alt="main logo" /></a>
             <div className='col-span-6 col-start-3 flex items-center'>
                 <div className='searchBar w-full bg-white h-2/3 rounded-sm grid grid-cols-12 grid-rows-1 '>
                     <input value={searchEvent} onChange={(e) => { setSearchEvent(e.target.value) }} className='dropdown col-span-10 shrink col-start-1 outline-none poppins-semibold px-3' placeholder='Looking for a great movie? Discover it on MovieZone!' />
