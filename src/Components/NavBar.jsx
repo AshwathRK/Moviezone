@@ -54,14 +54,12 @@ export default function NavBar() {
                         ) : (
                             <span className="flex justify-center items-center">
                                 <img src="search_icon.png" className="h-4 mx-2 searchicon" />
-                                Search
                             </span>
                         )}
                     </button>
                 </div>
             </div>
-            <div className=' containerbtn col-span-4 col-start-3 col-start-9 flex items-center justify-center'>
-                        
+            <div className=' containerbtn col-span-4 col-start-3 col-start-9 flex items-center justify-center'>   
                 <button onClick={()=>{navigate("/");}} className='text-white poppins-semibold btn-watchlist h-10 px-3 flex items-center'> <img src="./home.png" className='mx-2 watchlist w-4' /><span className='watchList'>Home</span></button>
                 <button onClick={()=>{navigate("/movielist");}}  className='text-white poppins-semibold btn-watchlist h-10 px-3 flex items-center'> <img src="./list.png" className='mx-2 watchlist w-4' /><span className='watchList'>Movie List</span></button>
                 <button onClick={SearchDisplay} className='searchbtn sm:hidden poppins-semibold flex items-center justify-around px-2'><img src="search_icon.png" className='w-auto h-4 searchicon' /></button>

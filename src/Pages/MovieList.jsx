@@ -19,15 +19,15 @@ export default function MovieList() {
     const [watchListMovies, setWatchListMovies] = useState([])
 
     //Store the selected watchlist movies in localstorage
-    
-    localStorage.setItem('watchListMovies', JSON.stringify(watchListMovies));
 
-
+    useEffect(() => {
+        localStorage.setItem('watchListMovies', JSON.stringify(watchListMovies));
+    }, [watchListMovies]);
 
     // To reset the selected watchlist buttons
     useEffect(() => {
         setClickedIndexes(new Set())
-    }, [searchedMovies])
+    }, [searchedMovies, sortByMovieType, sortByYear])
 
 
     useEffect(() => {
@@ -64,7 +64,14 @@ export default function MovieList() {
         setClickedIndexes((prev) => {
             const newSet = new Set(prev);
             newSet.has(index) ? newSet.delete(index) : newSet.add(index);
-            setWatchListMovies((prev) => [...prev, value]);
+            setWatchListMovies((prev) => {
+                const exists = prev.some(m => m.imdbID === value.imdbID);
+                if (exists) {
+                    return prev.filter(m => m.imdbID !== value.imdbID);
+                } else {
+                    return [...prev, value];
+                }
+            });
             return newSet;
         });
     };

@@ -333,3 +333,31 @@ body {
 		}
 	}
 }
+
+/* WatchList movies */
+
+
+.movieWatchlistPage{
+	background-color: rgb(255, 237, 239);
+	.watchListTitle{
+		color: var(--primary_color);
+	}
+	.movieWatchlistContainer{
+		/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+		.cardOfWatchlist{
+			.removeBtn{
+				display: none;
+				bottom: 1vw;
+			}
+		}
+		.cardOfWatchlist:hover{
+			.removeBtn{
+				display: inline;
+			}
+		}
+
+	}
+}
+
+
+
