@@ -31,6 +31,9 @@ export default function NavBar() {
             setLoading(false);
         }, 500);
     }
+
+    console.log(searchValue)
+
     const SearchDisplay = () => {
         setSearchBy(searchBy === "hiddensearchBar" ? "shownsearchBar" : "hiddensearchBar");
     };
@@ -67,7 +70,7 @@ export default function NavBar() {
             </div>
 
             <div className={`${searchBy} sm:hidden absolute w-full bg-white h-2/3 grid grid-cols-12 grid-rows-1`}>
-                <input className='dropdown col-span-8 col-start-1 outline-none poppins-requler px-3' placeholder='Looking for a great movie? Discover it on MovieZone!' />
+                <input value={searchEvent} onChange={(e) => { setSearchEvent(e.target.value) }} className='dropdown col-span-8 col-start-1 outline-none poppins-requler px-3' placeholder='Looking for a great movie? Discover it on MovieZone!' />
                 <button onClick={() => {
                     getValuefromInput();
                 }} className='btnSearch flex flex-none justify-around col-span-2 col-start-9 text-white items-center poppins-semibold'>{loading ? (
